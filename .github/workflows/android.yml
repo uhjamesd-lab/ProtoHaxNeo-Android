@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Make directory to upload artifacts
-      run: Upload_Gradle
+      run: mkdir Upload_Gradle
     
     - uses: actions/checkout@v4
     - name: set up JDK 11
@@ -32,4 +32,4 @@ jobs:
       uses: ./
       with:
         name: 'Artifact-A-${{ matrix.runs-on }}'
-        path: /Upload/
+        path: /Upload_Gradle
