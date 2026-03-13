@@ -51,13 +51,12 @@ android {
             signingConfig signingConfigs.getByName('debug')
             firebaseCrashlytics {
                 mappingFileUploadEnabled false
-
             }
         }
     }
     compileOptions {
-        sourceCompatibility '11'
-        targetCompatibility '11'
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = '11'
@@ -80,6 +79,15 @@ android {
             }
         }
     }
+}
+
+// --- Optional: Ensure these repositories are available, even though they're in settings.gradle globally
+repositories {
+    mavenLocal()
+    maven { url = 'https://mccheatz.github.io/maven_repo/' }
+    google()
+    mavenCentral()
+    maven { url = 'https://jitpack.io' }
 }
 
 dependencies {
