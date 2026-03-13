@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url = 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -12,8 +13,8 @@ dependencyResolutionManagement {
         maven { url = 'https://mccheatz.github.io/maven_repo/' }
         google()
         mavenCentral()
+        maven { url = 'https://jitpack.io' }
     }
 }
 rootProject.name = 'ProtoHax-Android'
 include ':app'
-
