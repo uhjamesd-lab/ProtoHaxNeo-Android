@@ -82,13 +82,6 @@ android {
 }
 
 // --- Optional: Ensure these repositories are available, even though they're in settings.gradle globally
-repositories {
-    mavenLocal()
-    maven { url = 'https://mccheatz.github.io/maven_repo/' }
-    google()
-    mavenCentral()
-    maven { url = 'https://jitpack.io' }
-}
 
 dependencies {
     implementation 'dev.sora.relay:ProtoHax:1.3.2'
